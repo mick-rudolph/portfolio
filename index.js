@@ -17,28 +17,61 @@ $(window).on('load', function() {
 });
 
 
-// import LocomotiveScroll from 'locomotive-scroll';
 
-// const scroll = new LocomotiveScroll();
+// var observer = new IntersectionObserver(function(entries) { console.log(entries);
+// 	if(entries[0]['isIntersecting'] === true) {
+// 		if(entries[0]['intersectionRatio'] === 1)
+// 			document.querySelector("#message").textContent = 'Target is fully visible in screen';
+// 		else if(entries[0]['intersectionRatio'] > 0.5)
+// 			document.querySelector("#message").textContent = 'More than 50% of target is visible in screen';
+// 		else
+// 			document.querySelector("#message").textContent = 'Less than 50% of target is visible in screen';
+// 	}
+// 	else {
+// 		document.querySelector("#message").textContent = 'Target is not visible in screen';
+// 	}
+// }, { threshold: [0, 0.5, 1] });
 
-// Scrollify stuff, doesn't work
+// observer.observe(document.querySelector("#target-container"));
 
-// $(function() {
-//     $.scrollify({
-//       section : ".project1",
-//     });
-//   });
 
-//   $(function() {
-//     $.scrollify({
-//       section : ".example-classname",
-//     });
-//   });
 
-// window.addEventListener('scroll',function(e){
 
-//     const target = document.querySelector('.yo');
+$.fn.isInViewport = function () {
+    let elementTop = $(this).offset().top;
+    let elementBottom = elementTop + $(this).outerHeight();
 
-//     target.style.transform = 'translate3d(-300px,200px,0px)';
+    let viewportTop = $(window).scrollTop();
+    let viewportBottom = viewportTop + $(window).height();
 
-// });
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window).scroll(function () {
+    if ($('#yo1').isInViewport()) {
+        $("#naval1").css("background-color","#2E2E2E").css("opacity","1");  
+        $("#naval2").css("background-color","#D5D5D5").css("opacity","1");  
+        $("#naval3").css("background-color","#D5D5D5").css("opacity","1");   
+        console.log('success.')
+    } 
+    if ($('#yo2').isInViewport()) {
+        $("#naval1").css("background-color","#D5D5D5").css("opacity","1");  
+        $("#naval2").css("background-color","#2E2E2E").css("opacity","1");  
+        $("#naval3").css("background-color","#D5D5D5").css("opacity","1");  
+    } 
+    if ($('#yo3').isInViewport()) {
+        $("#naval1").css("background-color","#D5D5D5").css("opacity","1");  
+        $("#naval2").css("background-color","#D5D5D5").css("opacity","1");  
+        $("#naval3").css("background-color","#2E2E2E").css("opacity","1");  
+    } 
+    if ($('#yoyo').isInViewport()) {
+        $("#naval1").css("opacity","0");
+        $("#naval2").css("opacity","0");
+        $("#naval3").css("opacity","0");
+    } 
+});
+
+
+
+
+
