@@ -5,31 +5,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Didact+Gothic&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  <link href="index.css" rel="stylesheet" type="text/css">
+    <!-- I am pretty sure this is fullpage stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css" integrity="sha512-RVmrWua3k1yTDEOg4Yzs2bK5+Thh7nM6jrhDq/6/5/Mwa0JbYe4pP4YMK5sqghKz01T3DgrwYc57Jaf1PSurCg==" crossorigin="anonymous" />
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <!-- Smooth scroll so it works on safari, keep -->
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+    <!-- jQuery Scroll Snap Stylesheet -->
+    <!-- <link rel="stylesheet" href="jquery-scroll-snap/jquery-scroll-snap.css"> -->
+    <!-- jQuery Scroll Snap Plugin -->
+    <!-- <script src="jquery-scroll-snap/jquery-scroll-snap.js"></script> -->
   <title>Home</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
 
-<div class="logo">
-    <img src="../portfolio/assets/MR_logo@3x.png" style="height: 50px; width: 50px;"> 
-</div>
+<div id="fullpage" class="viewer">
+<!-- Home -->
 
-<div class="container-fluid col-lg-5">
-    <div class="row navbar">
-        <div class="col-lg-4">
-            <span class="link gray"><a>About</a></span>
-        </div>
-        <div class="col-lg-4">
-            <span class="link gray"><a>Projects</a></span>
-        </div>
-        <div class="col-lg-4">
-           <span class="link gray"><a>Contact</a></span>
+<section  id="home" class="section">
+
+    <!-- Logo -->
+<div>
+    <div class="logo">
+        <a href="#home">
+            <img src="../UXUIportfolio/assets/logo@3x.png" style="height: 50px; width: 50px;"> 
+        </a>
+    </div>
+    
+    <!-- Nav -->
+
+    <div id="nav" class="container-fluid col-lg-12">
+        <div class="row navbar justify-content-lg-center">
+            <div class="col-lg-2">
+                <span class="link gray"><a>About</a></span>
+            </div>
+            <div class="col-lg-2">
+                <span id="projects-menu" class="link gray"><a href="#project1">Projects</a></span>
+            </div>
+            <div class="col-lg-2">
+            <span class="link gray"><a>Contact</a></span>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="container ">
+<!-- Intro -->
+
+<div class="container">
     <div class="row">
         <div class="col-lg-12">
             <h1 class="intro">Hey, my name's <span class="mick">Mick</span></h1>
@@ -44,44 +67,62 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 mx-auto">
-            <p class="intro-subtext">I'm a UX/UI designer who’s passionate about finding intuitive, delightful solutions to everyday problems.</p> 
+        <div class="col-lg-12 mx-auto d-flex align-items-center justify-content-center">
+            <p class="intro-subtext">I'm a UX/UI designer who's passionate about finding intuitive, delightful solutions to everyday problems.</p> 
         </div>
     </div>
     <div class="row pt-5">
-        <div class="col-lg-12 mx-auto">
-            <div>
-                <p id="hero-button" class="mx-auto">Get to know me</p>
+        <div class="col-lg-12 mx-auto d-flex align-items-center justify-content-center">
+            <div id="hero-button">
+                <p>Get to know me</p>
             </div>
         </div>
     </div>
-    <section id="view-projects">
-        <div class="row align-items-center">
+
+    <a href="#project1">
+        <div class="row pt-5">
             <div class="col-lg-12 mx-auto d-flex align-items-center justify-content-center">
-                <span>View projects</span>
+                <div class="view-projects">
+                    <p>View projects</p>
+                </div>
             </div>
         </div>
-        <div class="row align-items-center" style="margin-top: -6px;">
+        <div class="row pt-4">
             <div class="col-lg-12 mx-auto d-flex align-items-center justify-content-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
-                </svg>
+                <div class="view-projects">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+                    </svg>
+                </div>
             </div>
         </div>
-    </section>
+    </a>
+    
+</div>
+</section>
+
+<!-- Project 1 -->
+<div class="naval-vp">
+    <a href="#project1">
+        <div id="naval1" class="naval"></div>
+    </a>
+    <a href="#project2">
+        <div id="naval2" class="naval"></div>
+    </a>        
+    <a href="#project3">
+        <div id="naval3" class="naval"></div>
+    </a>
 </div>
 
-
-
-<section class="project1">
-    <div class="container-fluid col-lg-10">
+<section id="project1" class="section project1 example-classname" style="background-color: rgb(239, 241, 241);">
+    <div class="container-fluid col-lg-10 project-tiles">
         <div class="row gx-2">
             <div class="col-lg-5 offset-lg-1">
                 <div class="project1-description-box">
                     <div class="container">
                         <div class="row pt-5">
                             <div class="col-lg-11 offset-1">
-                                <h2>Every meal matters</h2>
+                                <h2>PROJECT1<br>Every meal matters</h2>
                             </div>
                         </div>
                         <div class="row pt-2">
@@ -93,17 +134,111 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <img class="picture-container-lg" src="../portfolio/images/cp_mockup@2x.jpg" width=100%;>
+            <div class="col-lg-6 img-hover-zoom">
+                <img class="picture-container-lg" src="../UXUIportfolio/images/cp_mockup@2x.jpg" width=100%;>
             </div>
         </div>
         <div class="row gx-2">
             <div class="col-lg-5 offset-lg-1">
-                <img class="picture-container-sm container-bottom" src="../portfolio/images/fern@2x.jpg" width=100%;>
+                <img class="picture-container-sm container-bottom" src="../UXUIportfolio/images/fern@2x.jpg" width=100%;>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Project 2 -->
+<section id="project2" class="section" style="background-color: rgb(199, 226, 204);">
+    <div class="container-fluid col-lg-10 project-tiles">
+        <div class="row gx-2">
+            <div class="col-lg-5 offset-lg-1">
+                <div class="project1-description-box">
+                    <div class="container">
+                        <div class="row pt-5">
+                            <div class="col-lg-11 offset-1">
+                                <h2>PROJECT2<br>Every meal matters</h2>
+                            </div>
+                        </div>
+                        <div class="row pt-2">
+                            <div class="col-lg-11 offset-1">How do you help people users change their behavior without making them feel guilty?</div>
+                        </div>
+                        <div class="row pt-5">
+                            <div class="col-lg-11 offset-1">View the case study</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 img-hover-zoom">
+                <img class="picture-container-lg" src="../UXUIportfolio/images/cp_mockup@2x.jpg" width=100%;>
+            </div>
+        </div>
+        <div class="row gx-2">
+            <div class="col-lg-5 offset-lg-1">
+                <img class="picture-container-sm container-bottom" src="../UXUIportfolio/images/fern@2x.jpg" width=100%;>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Project 3 -->
+<section id="project3" class="section" style="background-color: rgb(231, 216, 149);">
+    <div class="container-fluid col-lg-10 project-tiles">
+        <div class="row gx-2">
+            <div class="col-lg-5 offset-lg-1">
+                <div class="project1-description-box">
+                    <div class="container">
+                        <div class="row pt-5">
+                            <div class="col-lg-11 offset-1">
+                                <h2>PROJECT 3 <br>Every meal matters</h2>
+                            </div>
+                        </div>
+                        <div class="row pt-2">
+                            <div class="col-lg-11 offset-1">How do you help people users change their behavior without making them feel guilty?</div>
+                        </div>
+                        <div class="row pt-5">
+                            <div class="col-lg-11 offset-1">View the case study</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 img-hover-zoom">
+                <img class="picture-container-lg" src="../UXUIportfolio/images/cp_mockup@2x.jpg" width=100%;>
+            </div>
+        </div>
+        <div class="row gx-2">
+            <div class="col-lg-5 offset-lg-1">
+                <img class="picture-container-sm container-bottom" src="../UXUIportfolio/images/fern@2x.jpg" width=100%;>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- Scrollify stuff, can't figure out -->
+
+<!-- <script src="bower_components/jquery/dist/jquery.min.js">
+    $(function() {
+    $.scrollify({
+      section : ".project1",
+    });
+  });
+
+  $(function() {
+    $.scrollify({
+      section : ".example-classname",
+    });
+  });
+</script> -->
+
+<!-- Full page stuff, pretty sure -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous"></script>
+
+<script>
+    new fullpage ('#fullpage', {
+        autoscrolling: false,
+        verticalCentered: false,
+        anchors: ['home', 'project1','project2','project3'],
+    })
+</script>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

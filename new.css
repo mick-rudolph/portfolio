@@ -1,0 +1,17 @@
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    display: flex;
+    color: slateblue;
+}
+
+section{
+    scroll-snap-align: start;
+    height: 100vh;
+    background-color: seagreen;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}

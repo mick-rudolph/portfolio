@@ -1,10 +1,5 @@
 $(document).ready(function(){
-
-
 });
-
-
-
 
 $('.intro-box').animate({width: 0, marginRight: 0}, {duration: 1000});
 $(window).on('load', function() {
@@ -16,26 +11,34 @@ $(window).on('load', function() {
             });
             $('.intro-subtext').fadeIn(5000,function(){
                 $('#hero-button').fadeIn(2000);
-                $('#view-projects').fadeIn(5000);
+                $('.view-projects').fadeIn(5000);
             });
-          
     });
 });
 
 
-// $('.intro-box').animate({width: 0, marginRight: 0}, {duration: 1000});
-// $(window).on('load', function() {
-//     $('.intro-box').animate({width: "305px", marginRight:0},1000,);
-//         $('.intro').fadeIn(100);
-//             $('.intro-box').animate({width: 0, right: "-305px"}, {duration: 1500}, "swing");
-//                 $('.intro-box').animate({width: "115px", marginRight:0},1000);
+// import LocomotiveScroll from 'locomotive-scroll';
+
+// const scroll = new LocomotiveScroll();
+
+// Scrollify stuff, doesn't work
+
+// $(function() {
+//     $.scrollify({
+//       section : ".project1",
+//     });
+//   });
+
+//   $(function() {
+//     $.scrollify({
+//       section : ".example-classname",
+//     });
+//   });
+
+// window.addEventListener('scroll',function(e){
+
+//     const target = document.querySelector('.yo');
+
+//     target.style.transform = 'translate3d(-300px,200px,0px)';
+
 // });
-
-
-
-
-
-document.documentElement.classList.add('preparation');
-window.onload = function() {
-    document.documentElement.classList.remove('preparation');
-};
