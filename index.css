@@ -111,6 +111,7 @@ a:hover {
     position:absolute;
     margin-left: 6%;
     padding-top: 25px;
+    z-index: 90;
 }
 
 .intro {

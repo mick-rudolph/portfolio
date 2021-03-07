@@ -95,6 +95,12 @@ a:hover {
     position:absolute;
     margin-left: 6%;
     padding-top: 25px;
+    z-index: 90;
+}
+
+.logo-link {
+    background-color: #2E2E2E;
+    padding: 10px;
 }
 
 #hero {

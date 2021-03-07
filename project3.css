@@ -93,6 +93,7 @@ a:hover {
     position:absolute;
     margin-left: 6%;
     padding-top: 25px;
+    z-index: 90;
 }
 
 #hero-position {
@@ -101,7 +102,7 @@ a:hover {
 }
 
 #problem-position {
-    top: 160px;
+    top: 400px;
     position: relative;
 }
 
