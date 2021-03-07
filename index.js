@@ -64,7 +64,7 @@ $(window).scroll(function () {
         $("#naval2").css("background-color","#D5D5D5").css("opacity","1");  
         $("#naval3").css("background-color","#2E2E2E").css("opacity","1");  
     } 
-    if ($('#yoyo').isInViewport()) {
+    if ($('#contact-page').isInViewport()) {
         $("#naval1").css("opacity","0");
         $("#naval2").css("opacity","0");
         $("#naval3").css("opacity","0");

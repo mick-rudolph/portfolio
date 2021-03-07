@@ -277,3 +277,8 @@ margin-top: 44vh;
     text-decoration: none;
     color: #2E2E2E;
 }
+
+#contact-position {
+    top: 300px;
+    position: relative;
+}
