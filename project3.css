@@ -24,6 +24,7 @@ h2 {
 h3 {
     font-size: 26px;
     color: #253526;
+    line-height: 35px;
 }
 
 /* .orange {
@@ -39,9 +40,6 @@ h3 {
 }
 
 /* Home */
-#nav {
-    position:fixed;
-}
 
 .navbar {
     text-align: center;
@@ -96,17 +94,7 @@ a:hover {
     z-index: 90;
 }
 
-#hero-position {
-    top: 160px;
-    position: relative;
-}
-
-#problem-position {
-    top: 400px;
-    position: relative;
-}
-
-.header-box1 {
+.header-box {
     background-color: #AABE80;
     padding: 15px 15px 7px 15px;
     position: relative;
@@ -116,12 +104,39 @@ a:hover {
 
 .text-box {
     background-color: #AABE80;
-    padding: 35px 35px 25px 35px;
+    padding: 30px 30px 20px 40px;
     position: relative;
     left: -10px;
     top: -10px;
 }
 
-.header-box2 {
-    background-color: #73855b;   
+.box2 {
+    background-color: #869A6A;  
+    position: relative;
+    top: 10px; 
+}
+
+#hero-button {
+    padding: 1px;
+    padding-top: 1em;
+    font-size: 16px;
+    background-color: #AABE80;
+    border-radius: 6px;
+    width: 180px;
+    /* height: 45px; */
+    color:  white;
+    cursor: pointer;
+   text-align: center;
+    /* display: none; */
+    /* position: absolute; */
+}
+
+#hero-button:only-child {
+    justify-self: center;
+    align-self: center
+}
+
+#hero-button:hover {
+    color: white;
+    background-color:#869A6A;
 }
