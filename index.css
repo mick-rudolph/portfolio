@@ -59,6 +59,7 @@ h2 {
 /* Home */
 #nav {
     position:fixed;
+    z-index: 100;
 }
 
 .navbar {
@@ -111,7 +112,7 @@ a:hover {
     position:absolute;
     margin-left: 6%;
     padding-top: 25px;
-    z-index: 90;
+    z-index: 500;
 }
 
 .intro {
@@ -282,4 +283,45 @@ margin-top: 44vh;
 #contact-position {
     top: 300px;
     position: relative;
+}
+
+#about-position {
+    position: relative;
+    top: 20vh;
+}
+
+.about-rectangle {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(to top right, #3b7a91, #b4d7e2);
+    transform: translate(20px,20px);
+    z-index: -1;
+}
+
+#profile-img {
+    transform: translate(-20px,-20px);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.about-link {
+    color:#3b7a91;
+}
+
+#resume-button {
+    padding: 8px;
+    font-size: 16px;
+    border: 2.5px solid #3b7a91;
+    border-radius: 6px;
+    max-width: 180px;
+    height: 45px;
+    color: #3b7a91;
+    cursor: pointer;
+}
+
+#resume-button:hover {
+    color: white;
+    background-color: #3b7a91;
 }

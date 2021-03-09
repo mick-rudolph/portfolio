@@ -41,9 +41,6 @@ h3 {
 }
 
 /* Home */
-#nav {
-    position:fixed;
-}
 
 .navbar {
     text-align: center;
@@ -103,11 +100,6 @@ a:hover {
     padding: 10px;
 }
 
-#hero {
-    position: relative;
-    top: 18vh;
-}
-
 #title-box {
     height: 80px;  
     display: flex;
@@ -127,7 +119,7 @@ a:hover {
 }
 
 .problem {
-    margin-top: 35vh;
+    margin-top: 20vh;
 }
 
 .header {
