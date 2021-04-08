@@ -208,3 +208,105 @@ a:hover {
     color: white;
     background-color: #316675;
 }
+
+
+/* Project 1 stuff */
+
+/* Project1 */
+
+.project-tiles {
+    position: relative;
+    top: 20vh;
+}
+
+.naval-vp {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 20vh;
+}
+
+.naval {
+    background-color: #D5D5D5;
+    height: 12vh;
+    width: 4px;
+    position: absolute;
+    margin-left: 7%;
+}
+
+#naval1 {
+    margin-top: 12vh;
+    background-color: #2E2E2E;
+}
+
+#naval2 {
+margin-top: 28vh;
+}
+
+#naval3 {
+margin-top: 44vh;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+    overflow: hidden; 
+}
+  
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+  
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+.picture-container-sm{
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+    /* object-position: 0px -40px; */
+    /* border-radius: 13px; */
+  }
+
+  @media all and (max-width: 1200px) {
+    .picture-container-sm { display:none; }
+}
+
+.picture-container-lg{
+    height: 560px;
+    width: 100%;
+    object-fit: cover;
+    /* object-position: 0px -30px; */
+    /* border-radius: 13px; */
+}
+
+.container-bottom {
+    transform:translateY(9px);
+}
+
+.project-description-box {
+      height: 275px;
+      width: 100%;
+}
+
+#project1-description-box {
+    background-color: #9AA28D;
+}
+
+#project2-description-box {
+    background-color: #FDF3D2;
+}
+
+#project3-description-box {
+    background-color: #909F76;
+}
+
+.view-study {
+    transform: translate(190px,-25px);
+}
+
+.view-study-style {
+    text-decoration: none;
+    color: #2E2E2E;
+}

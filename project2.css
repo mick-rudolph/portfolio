@@ -213,3 +213,11 @@ a:hover {
     color: white;
     background-color: #FF9364;
 }
+
+#prototype {
+    border: 2.5px solid rgb(36, 36, 36);
+}
+
+.center-text {
+    text-align: center;
+}
