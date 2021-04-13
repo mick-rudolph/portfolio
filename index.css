@@ -377,3 +377,18 @@ a:hover {
     color: white;
     background-color: #3b7a91;
 }
+
+.rotate {
+    transform: rotate(180deg)
+}
+
+.back-position { 
+    margin-top: 33vh;
+}
+
+.page-arrow {
+    padding-top: 30px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 400;
+}

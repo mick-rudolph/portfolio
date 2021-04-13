@@ -87,12 +87,10 @@ a:hover {
 }
 
 #hero-text {
-    transform: translateY(150px);
+    transform: translateY(-145%);
     color: #B9CAE3;
-}
-
-.quote-position {
-    transform: translateX(-70px);
+    position: absolute;
+    font-size: 6vmax;
 }
 
 .bubble {
@@ -118,7 +116,7 @@ a:hover {
     border-top: 12px solid #FF9364;
     border-bottom: 20px solid transparent;
     left: -20px;
-    bottom: 20px;
+    bottom: 30px;
     transform: rotate(65deg);
 }
 
@@ -134,13 +132,13 @@ a:hover {
     align-items: center;
 }
 
-.circle-container {
+/* .circle-container {
     grid-template-columns: 1fr;
     display: grid;
     text-align: center;
     margin: 0 auto;
     align-content: center;
-}
+} */
 
 .text-box {
     background-color: #FF9364;
@@ -153,31 +151,69 @@ a:hover {
 .reverse-icon {
     background-color: #FF9364;
     border-radius: 50%;
-    width: 149px;
-    height: 149px;
+    width: 110px;
+    height: 110px;
 }
 
 .reverse-circle {
     border: 9px solid #FF9364;
 	border-radius: 50%;
-	width: 147px;
-	height: 147px;
+	width: 108px;
+	height: 108px;
 	z-index: 300;
-    transform: translate(1px,-147px);
+    transform: translate(1px,-108px);
+}
+
+#traveler {
+    transform: translateY(-108px);
 }
 
 .upper-arrow {
-    transform: rotate(25deg)
+    transform: rotate(24deg);
+    right: 10px;
+    position: relative;
 }
 
 .lower-arrow {
     transform: rotate(205deg);
-    top: -130px;
+    top: -150px;
+    left: 18px;
     position: relative;
+}
+
+@media all and (max-width: 992px) {
+    #diagram { transform: translateY(-60px)}
+}
+
+@media all and (max-width: 992px) {
+    #lower-description { transform: translateY(-245px)}
+}
+
+@media all and (max-width: 992px) {
+    #ideation
+     { transform: translateY(-180px)}
 }
 
 #prototype-arrow {
     transform: rotate(90deg);
+    width: 100px;
+    position: relative;
+    right: 20px;
+}
+
+@media all and (max-width: 768px) {
+    #prototype-arrow
+     { transform: rotate(180deg);}
+}
+
+@media all and (max-width: 992px) {
+    #prototype-arrow
+     { left: 3px;}
+}
+
+@media all and (max-width: 992px) {
+    .rwd-shift
+     { transform: translateY(-180px)}
 }
 
 .picture-box {

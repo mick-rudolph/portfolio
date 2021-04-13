@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    $( window ).resize(function() {
+        if ($(window).width() < 768 ) {
+           $('.reverse').addClass('flex-column-reverse')
+        } else {
+            $('.reverse').removeClass('flex-column-reverse');
+        }
+    });
 });
 
 // $(window).on('load', function() {
@@ -8,13 +15,7 @@ $(document).ready(function(){
 // });
 
 
-$( window ).resize(function() {
-    if ($(window).width() < 768 ) {
-       $('.reverse').addClass('flex-column-reverse')
-    } else {
-        $('.reverse').removeClass('flex-column-reverse');
-    }
-});
+
 
 $.fn.isInViewport = function () {
     let elementTop = $(this).offset().top;

@@ -36,12 +36,13 @@
         </div>
     </div>
 
-    <div class="container col-7">
+    <div class="container col-lg-7 col-md-8 col-sm-8 col-9">
         <div class="row">
             <div id="hero-text" class="col-12 mx-auto d-flex align-items-center justify-content-center">
-                <h1 class="bold">local</h1>
+                <!-- <h1 class="bold">local</h1> -->
             </div>
-            <div class="col-12">
+            <div class="col-12 mx-auto d-flex align-items-center justify-content-center">
+                <h1 id="hero-text" class="bold">local</h1>
                 <img src="images/local_hero@2x.jpg" style="width:100%">
             </div>
             <div class="col-12 pt-3">
@@ -61,15 +62,11 @@
             <div class="col-12">
                 <h3>Travelers are craving authentic, unique experiences beyond major tourist attractions when they go on vacation, but they don’t know how to find those experiences. </h3>
             </div>
-            <span class="mx-auto d-flex align-items-center justify-content-center quote-position pt-5">
-                <div class="col-2">
+            <div class="col-12 mx-auto d-flex align-items-center justify-content-center pt-5">
                     <img src="assets/icon_1@3x.png" style="height:150px; width:auto;">
-                    <!-- <img src="assets/icon_2@3x.png" style="height:210px; width:auto;"> -->
-                </div>
-                <div class="col-2">
+                    <span style="display:inline-block; width: 50px;"></span>
                     <div class="bubble bubble-bottom-left">“Is this restaurant really the best one in the city? Or does everyone just go here because it shows up first on Google?”</div>
-                </div>
-            </span> 
+            </div> 
        </div>
     </div>
 
@@ -78,16 +75,23 @@
              <div class="col-12">
                  <h2>persona</h2>
              </div>
-            <div class="col-9 pt-4">
+            <div class="col-lg-9 col-md-12 pt-4">
                 <img src="images_project2/persona.jpg" style="width:100%">
             </div>
-            <div class="col-3 pt-4 mx-auto align-items-center d-flex justify-content-center">
-                <div class="circle-container w-50">
-                    <div class="circle"><h1>6</h1></div>
-                    <div class="col-3 pt-2"><h3 class="orange center-text">user interviews</h3></div>
-                    <h1 class="orange">+</h1>
-                    <div class="circle"><h1>100+</h1></div>
-                    <div class="col-3 pt-2"><h3 class="orange">survey participants</h3></div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12 pt-4 mx-auto align-items-center d-flex justify-content-around">
+                <div class="row circle-container mx-auto d-flex align-items-center justify-content-center">
+                    <div class="col-lg-12 col-md-4 col-sm-4 col-4">
+                        <div class="circle"><h1>6</h1></div>
+                        <div class="col-3 pt-2"><h3 class="orange center-text">user interviews</h3></div>
+                    </div>
+                    <div class="col-lg-12 col-md-4 col-sm-4 col-4">
+                        <h1 class="orange mx-auto d-flex align-items-center justify-content-center">+</h1>
+                    </div>
+                    <div class="col-lg-12 col-md-4 col-sm-4 col-4">
+                        <div class="circle"><h1>100+</h1></div>
+                        <div class="col-3 pt-2"><h3 class="orange">survey participants</h3></div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -102,13 +106,13 @@
                 <h3>How might we offer a rich, authentic, “locals” experience while tailoring to all the different types of travelers?
             </h3>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-12">
                 <div class="text-box">
                     <ul><li>Users want to have a “local” experience when they go on vacation, without the cost of a tour guide</li></ul>
                     <ul><li>There is a wide variety of preference in regard to vacationing (relaxing vs doing, planning vs spontaneity, quality time at one location vs quantity of locations, outdoorsy activities vs site-seeing)</li></ul>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-12">
                 <img src="images_project2/insight@2x.jpg" style="width:100%">
             </div>
         </div>
@@ -119,48 +123,60 @@
             <div class="col-12">
                 <h2>solution</h2>
             </div>
-            <div class="col-12 pb-4">
+            <div class="col-12">
                 <h3>A simple, convenient app that provides travelers the bridge to connect to locals wherever they travel.</h3>
             </div>
-            <div class="col-2 offset-1 pt-5 mt-5">
-                <p class="orange">Creates a local profile w/basic information & activities/locations they could show. </p>
+            <div class="col-lg-2 col-md-12 offset-lg-1 mt-5 pt-1 pb-2">
+                <p class="orange">Local creates a profile with basic information & activities or locations they could show to travelers. </p>
             </div>
-            <div class="col-2 pt-5 mt-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height=auto fill="#FF9364" class="bi bi-person-circle reverse-icon-child" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                </svg>
-                <h3 class="orange d-flex justify-content-center pt-3" style="font-weight: bold;font-family:'Poppins', sans-serif;">Local</h3>
-            </div>
-            <div class="col-2 pt-5 mt-5">
-                    <svg class="upper-arrow" xmlns="http://www.w3.org/2000/svg" width=100% height=auto><g fill="none" stroke="#FF9364" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path d="M6.229 51.784c21.772-37.742 58.396-52.588 101-48.5M2.771 45.352c1.652 4.064-.345 7.899.445 12.021 2.62-1.841 8.103-5.334 11.474-5.418"/></g></svg>
-                    <svg class="lower-arrow" xmlns="http://www.w3.org/2000/svg" width=100% height=auto><g fill="none" stroke="#FF9364" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path d="M6.229 51.784c21.772-37.742 58.396-52.588 101-48.5M2.771 45.352c1.652 4.064-.345 7.899.445 12.021 2.62-1.841 8.103-5.334 11.474-5.418"/></g></svg>
-            </div>
-            <div class="col-2 pt-5 mt-5">
-                <div class="reverse-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width=100% height=auto fill="white" class="bi bi-person-circle reverse-icon-child" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                    </svg>
-                    <div class="reverse-circle"></div>
+            <div id="diagram" class="col-lg-6 col-md-12 mt-5 pt-1">
+                <div class="row">
+                    <div class="col-4 d-flex justify-content-center">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width=110px height=110px fill="#FF9364" class="bi bi-person-circle reverse-icon-child" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                            <h3 id="local" class="orange d-flex justify-content-center pt-3" style="font-weight: bold;font-family:'Poppins', sans-serif;">Local</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center">
+                                <svg class="arrow upper-arrow" xmlns="http://www.w3.org/2000/svg" width=120px height=auto><g fill="none" stroke="#FF9364" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path d="M6.229 51.784c21.772-37.742 58.396-52.588 101-48.5M2.771 45.352c1.652 4.064-.345 7.899.445 12.021 2.62-1.841 8.103-5.334 11.474-5.418"/></g></svg>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <svg class="arrow lower-arrow" xmlns="http://www.w3.org/2000/svg" width=120px height=auto><g fill="none" stroke="#FF9364" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path d="M6.229 51.784c21.772-37.742 58.396-52.588 101-48.5M2.771 45.352c1.652 4.064-.345 7.899.445 12.021 2.62-1.841 8.103-5.334 11.474-5.418"/></g></svg>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="reverse-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width=110px height=110px fill="white" class="bi bi-person-circle reverse-icon-child" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                            <div class="reverse-circle"></div>
+                            <h3 id="traveler" class="orange d-flex justify-content-center pt-3" style="font-weight: bold;font-family:'Poppins', sans-serif;">Traveler</h3>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="orange d-flex justify-content-center pt-3" style="font-weight: bold;font-family:'Poppins', sans-serif;">Traveler</h3>
             </div>
-            <div class="col-2 pt-5 mt-5">
-                <p class="orange">Connects & messages with a local, depending on the type of trip they’d like to have.</p>
+            <div id="lower-description" class="col-lg-2 col-md-12 mt-5 pt-1">
+                <p class="orange">Travelers connects with & messages local, depending on the type of trip they’d like to have.</p>
             </div>
         </div>
     </div>
 
-    <div class="container col-9 pt-5 mt-3">
+    <div id="ideation" class="container col-9">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 mb-2">
                 <h2>ideation</h2>
             </div>
-            <div class="col-7">
+            <div class="col-lg-7 col-md-10 offset-lg-0 offset-md-1 mb-2">
                 <img src="images_project2/ideation_disorganized@2x.jpg" style="width:100%">
             </div>
-            <div class="col-5">
+            <div class="col-lg-5 col-md-10 offset-lg-0 offset-md-1">
                 <img src="images_project2/ideation_organized@2x.jpg" style="width:100%">
             </div>
             <div class="col-10 pt-5 offset-1">
@@ -177,47 +193,56 @@
         </div>  
     </div>
 
-    <div class="container col-7 pt-5 mt-3">
-        <div class="row">
-            <div class="col-5 d-flex align-items-center">
-                <img class="picture-box" src="images_project2/sketch_mockup@2x.jpg" style="width:100%">
+    <div class="rwd-shift">
+        <div class="container col-lg-8 col-md-12 col-sm-8 col-8 pt-5 mt-3">
+            <div class="row d-flex justify-content-center mx-auto">
+                <div class="col-lg-5 col-md-5 col-sm-12 mx-auto my-auto d-flex align-items-center justify-content-center mb-3">
+                    <img class="picture-box" src="images_project2/sketch_mockup@2x.jpg" style="width:100%; height:auto;">
+                </div>
+                <div id="prototype-arrow" class="col-12 mx-auto d-flex align-items-center justify-content-center mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="50"><g fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path d="M10 7.875c-1.975 13.446 1.001 27.03-.5 40.5M3.236 11.107c3.721-2.325 4.349-6.603 7.402-9.481 1.046 3.027 3.442 9.07 6.125 11.113"/></g></svg>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 col-12">
+                    <img class="picture-box" src="images_project2/progression_mockup@2x.jpg" style="width:100%; height:auto;">
+                </div>
             </div>
-            <div id="prototype-arrow" class="col-1 mx-auto d-flex align-items-center justify-content-center">
-                <svg id="prototype-arrow-size" xmlns="http://www.w3.org/2000/svg" width="20" height="50"><g fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path d="M10 7.875c-1.975 13.446 1.001 27.03-.5 40.5M3.236 11.107c3.721-2.325 4.349-6.603 7.402-9.481 1.046 3.027 3.442 9.07 6.125 11.113"/></g></svg>
-            </div>
-            <div class="col-4">
-                <img class="picture-box" src="images_project2/progression_mockup@2x.jpg" style="width:100%">
+        </div>
+    
+        <div class="container col-9">
+            <div class="row pt-5 mt-5">
+                <div class="col-4">
+                    <img class="picture-box" src="images_project2/midfi_quiz@2x.jpg" style="width:100%">
+                </div>                
+                <div class="col-4">
+                    <img class="picture-box" src="images_project2/midfi_featured@2x.jpg" style="width:100%">
+                </div>
+                <div class="col-4">
+                    <img class="picture-box" src="images_project2/midfi_chat@2x.jpg" style="width:100%">
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container col-9">
-        <div class="row pt-5 mt-5">
-            <div class="col-4">
-                <img class="picture-box" src="images_project2/midfi_quiz@2x.jpg" style="width:100%">
-            </div>                
-            <div class="col-4">
-                <img class="picture-box" src="images_project2/midfi_featured@2x.jpg" style="width:100%">
-            </div>
-            <div class="col-4">
-                <img class="picture-box" src="images_project2/midfi_chat@2x.jpg" style="width:100%">
-            </div>
-        </div>
-    </div>
 
-    <div class="container col-9 pt-5 mt-5">
+    <div class="rwd-shift container col-9 pt-5 mt-5">
         <div class="row">
             <div class="col-12">
                 <h2>user-testing</h2>
             </div>
-            <div class="col-2 mt-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height=auto fill="#FF9364" class="bi bi-person-circle reverse-icon-child" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                </svg>
-                <h3 class="orange d-flex justify-content-center pt-3" style="font-weight: bold;font-family:'Poppins', sans-serif;">3 user tests</h3>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-12 d-flex justify-content-center mt-5">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height=auto fill="#FF9364" class="bi bi-person-circle reverse-icon-child" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                    </div>
+                    <div class="col-12 pt-1">
+                        <h3 class="orange d-flex text-center justify-content-center" style="font-weight: bold;font-family:'Poppins', sans-serif;">3 user tests</h3>
+                    </div>
+                </div>
             </div>
-            <div id="user-testing-box" class="col-10 mt-5">
+            <div id="user-testing-box" class="col-lg-10 col-md-9 col-sm-8 col-10 mx-auto d-flex justify-content-center mt-5">
                 <div class="text-box">
                     <ul><li>Users have individual preferences (list vs map) — accommodate both while maintaining simplicity</li></ul>
                     <ul><li>“Featured” tab was confusing</li></ul>
@@ -229,12 +254,12 @@
         </div>  
     </div>
 
-    <div class="container col-9 pt-5 mt-5">
+    <div class="rwd-shift container col-9 pt-5 mt-5">
         <div class="row">
             <div class="col-12">
                 <h2>iterations & high-fidelity</h2>
             </div>
-            <div class="col-4 mt-5">
+            <div class="col-lg-4 col-md-5 mt-5">
                 <div class="text-box">
                     <ul><li>Added “skip” option to initial quiz</li></ul>
                     <ul><li>Made the quiz available at anytime</li></ul>
@@ -243,27 +268,27 @@
                     <ul><li>Made clarifications to opening splash screen copy</li></ul>
                 </div>
             </div>
-            <div class="col-8 mt-5">
+            <div class="col-lg-8 col-md-7 mt-5">
                 <img src="images_project2/flow_chart.jpg" style="width:100%">
             </div>
         </div>  
         <div class="row pt-5 mt-5">
-            <div class="col-3">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 pb-3">
                 <img class="picture-box" src="images_project2/hifi_splash@2x.jpg" style="width:100%">
             </div>                
-            <div class="col-3">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <img class="picture-box" src="images_project2/hifi_list@2x.jpg" style="width:100%">
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <img class="picture-box" src="images_project2/hifi_local@2x.jpg" style="width:100%">
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <img class="picture-box" src="images_project2/hifi_featured@2x.jpg" style="width:100%">
             </div>
         </div>
     </div>
 
-    <div class="container col-9 pt-5 mt-5">
+    <div class="rwd-shift container col-9 pt-5 mt-5">
         <div class="row">
             <div class="col-12">
                 <h2>interactive prototype</h2>
@@ -279,7 +304,7 @@
 
     
 
-    <div class="container col-9 pt-5 mt-5">
+    <div class="rwd-shift container col-9 pt-5 mt-5">
         <div class="row">
             <div class="col-12">
                 <h2>conclusion</h2>
@@ -309,3 +334,6 @@
 <script src="isInViewport.min.js"></script>
 <script src="index.js"></script>
 </html>
+
+
+

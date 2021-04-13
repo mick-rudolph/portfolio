@@ -11,7 +11,8 @@ body {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 42px;
+    font-size: 6vmin;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -108,10 +109,38 @@ a:hover {
     transform: translate(-30px, 35px);
 }
 
+@media all and (max-width: 992px) {
+    #title-box { transform: translate(11px, 0); width: 96.8%; }
+}
+
+@media all and (max-width: 768px) {
+    #title-box { width: 95%; }
+}
+
 .names {
     transform: rotate(-90deg);
-    margin-top: 175%;
+    position: relative;
+    top: 60%;
+    left: 6%;
+    width: auto;
+    /* margin-top: 175%; */
     font-family: 'Montserrat', sans-serif;
+}
+
+@media all and (max-width: 992px) {
+    .names {
+        transform: none;
+        top: 8px;
+        left: 0;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .names-child {
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
 }
 
 .no-pad {
@@ -150,16 +179,16 @@ a:hover {
     height:220px; 
     width:400px;
     border-radius: 10px;
-    transform: translate(60vw, -215px);
+    /* transform: translate(60vw, -215px); */
 }
 
 .stats {
     padding: 40px;
 }
 
-.stats-spacing {
+/* .stats-spacing {
     margin-top: -40px;
-}
+} */
 
 .challenge-spacing {
     margin-top: 150px;
