@@ -16,8 +16,6 @@
 	100% { opacity: 1; }
   }
 
-
-
 .animated-title {
 	justify-self: left;
 	justify-content: left;
@@ -77,4 +75,64 @@
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
+}
+
+.tileLeft {
+  opacity: 0;
+}
+
+.tileRight {
+  opacity: 0;
+}
+
+.tileBottom {
+  opacity: 0;
+}
+
+@keyframes tileLeftAnim { 
+  from {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1; 
+  }
+}
+
+@keyframes tileRightAnim { 
+  from {
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1; 
+  }
+}
+
+@keyframes tileBottomAnim { 
+  from {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1; 
+  }
+}
+
+.nav-guy {
+  opacity: 0;
+}
+
+@keyframes navalanim { 
+  from {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1; 
+  }
 }

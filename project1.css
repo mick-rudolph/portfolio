@@ -176,10 +176,11 @@ a:hover {
   }
 
 .quotes {
-    height:220px; 
-    width:400px;
+    /* height:220px; 
+    width:400px; */
+    padding-bottom: 50px;
     border-radius: 10px;
-    /* transform: translate(60vw, -215px); */
+    transform: translateY(-20px);
 }
 
 .stats {

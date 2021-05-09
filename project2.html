@@ -14,6 +14,9 @@
        <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
        <!-- . -->
     <link href="project2.css" rel="stylesheet" type="text/css">
+        <!-- This is for the pop-in animations -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- . -->
     <title>local</title>
 </head>
 <body>
@@ -56,38 +59,38 @@
 
     <div class="container col-9 pt-5 mt-3">
        <div class="row">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-right">
                 <h2>the problem</h2>
             </div>
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-right" data-aos-delay="50">
                 <h3>Travelers are craving authentic, unique experiences beyond major tourist attractions when they go on vacation, but they don’t know how to find those experiences. </h3>
             </div>
             <div class="col-12 mx-auto d-flex align-items-center justify-content-center pt-5">
-                    <img src="assets/icon_1@3x.png" style="height:150px; width:auto;">
+                    <img src="assets/icon_1@3x.png" style="height:150px; width:auto;" data-aos="zoom-in">
                     <span style="display:inline-block; width: 50px;"></span>
-                    <div class="bubble bubble-bottom-left">“Is this restaurant really the best one in the city? Or does everyone just go here because it shows up first on Google?”</div>
+                    <div class="bubble bubble-bottom-left" data-aos="zoom-in" data-aos-delay="300">“Is this restaurant really the best one in the city? Or does everyone just go here because it shows up first on Google?”</div>
             </div> 
        </div>
     </div>
 
     <div class="container col-9 pt-5 mt-3">
         <div class="row">
-             <div class="col-12">
+             <div class="col-12" data-aos="fade-right">
                  <h2>persona</h2>
              </div>
-            <div class="col-lg-9 col-md-12 pt-4">
+            <div class="col-lg-9 col-md-12 pt-4" data-aos="zoom-in">
                 <img src="images_project2/persona.jpg" style="width:100%">
             </div>
             <div class="col-lg-3 col-md-12 col-sm-12 col-12 pt-4 mx-auto align-items-center d-flex justify-content-around">
                 <div class="row circle-container mx-auto d-flex align-items-center justify-content-center">
-                    <div class="col-lg-12 col-md-4 col-sm-4 col-4">
+                    <div class="col-lg-12 col-md-4 col-sm-4 col-4" data-aos="fade-left">
                         <div class="circle"><h1>6</h1></div>
                         <div class="col-3 pt-2"><h3 class="orange center-text">user interviews</h3></div>
                     </div>
-                    <div class="col-lg-12 col-md-4 col-sm-4 col-4">
+                    <div class="col-lg-12 col-md-4 col-sm-4 col-4" data-aos="fade-left">
                         <h1 class="orange mx-auto d-flex align-items-center justify-content-center">+</h1>
                     </div>
-                    <div class="col-lg-12 col-md-4 col-sm-4 col-4">
+                    <div class="col-lg-12 col-md-4 col-sm-4 col-4" data-aos="fade-left">
                         <div class="circle"><h1>100+</h1></div>
                         <div class="col-3 pt-2"><h3 class="orange">survey participants</h3></div>
                     </div>
@@ -99,20 +102,20 @@
 
     <div class="container col-9 pt-5 mt-3">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-right">
                 <h2>insights</h2>
             </div>
-            <div class="col-12 pb-4">
+            <div class="col-12 pb-4" data-aos="fade-right" data-aos-delay="50">
                 <h3>How might we offer a rich, authentic, “locals” experience while tailoring to all the different types of travelers?
             </h3>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12" data-aos="fade-right">
                 <div class="text-box">
                     <ul><li>Users want to have a “local” experience when they go on vacation, without the cost of a tour guide</li></ul>
                     <ul><li>There is a wide variety of preference in regard to vacationing (relaxing vs doing, planning vs spontaneity, quality time at one location vs quantity of locations, outdoorsy activities vs site-seeing)</li></ul>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12" data-aos="zoom-in">
                 <img src="images_project2/insight@2x.jpg" style="width:100%">
             </div>
         </div>
@@ -120,16 +123,16 @@
 
     <div class="container col-9 pt-5 mt-3">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-right">
                 <h2>solution</h2>
             </div>
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-right" data-aos-delay="50">
                 <h3>A simple, convenient app that provides travelers the bridge to connect to locals wherever they travel.</h3>
             </div>
-            <div class="col-lg-2 col-md-12 offset-lg-1 mt-5 pt-1 pb-2">
+            <div class="col-lg-2 col-md-12 offset-lg-1 mt-5 pt-1 pb-2" data-aos="fade-right">
                 <p class="orange">Local creates a profile with basic information & activities or locations they could show to travelers. </p>
             </div>
-            <div id="diagram" class="col-lg-6 col-md-12 mt-5 pt-1">
+            <div id="diagram" class="col-lg-6 col-md-12 mt-5 pt-1" data-aos="zoom-in">
                 <div class="row">
                     <div class="col-4 d-flex justify-content-center">
                         <div>
@@ -162,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <div id="lower-description" class="col-lg-2 col-md-12 mt-5 pt-1">
+            <div id="lower-description" class="col-lg-2 col-md-12 mt-5 pt-1" data-aos="fade-left">
                 <p class="orange">Travelers connects with & messages local, depending on the type of trip they’d like to have.</p>
             </div>
         </div>
@@ -170,19 +173,19 @@
 
     <div id="ideation" class="container col-9">
         <div class="row">
-            <div class="col-12 mb-2">
+            <div class="col-12 mb-2" data-aos="fade-right">
                 <h2>ideation</h2>
             </div>
-            <div class="col-lg-7 col-md-10 offset-lg-0 offset-md-1 mb-2">
+            <div class="col-lg-7 col-md-10 offset-lg-0 offset-md-1 mb-2" data-aos="zoom-in">
                 <img src="images_project2/ideation_disorganized@2x.jpg" style="width:100%">
             </div>
-            <div class="col-lg-5 col-md-10 offset-lg-0 offset-md-1">
+            <div class="col-lg-5 col-md-10 offset-lg-0 offset-md-1" data-aos="zoom-in">
                 <img src="images_project2/ideation_organized@2x.jpg" style="width:100%">
             </div>
-            <div class="col-10 pt-5 offset-1">
+            <div class="col-10 pt-5 offset-1" data-aos="zoom-in">
                 <img src="images_project2/competitor_analysis@2x.jpg" style="width:100%;border-style:solid;border-width:1px;">
             </div>
-            <div class="col-12 pt-5 mt-4">
+            <div class="col-12 pt-5 mt-4" data-aos="fade-right">
                 <div class="text-box">
                     <h3 style="color:white">Must-have features:</h3>
                     <ul><li>The ability to see locals both from a map view and list view</li></ul>
@@ -196,13 +199,13 @@
     <div class="rwd-shift">
         <div class="container col-lg-8 col-md-12 col-sm-8 col-8 pt-5 mt-3">
             <div class="row d-flex justify-content-center mx-auto">
-                <div class="col-lg-5 col-md-5 col-sm-12 mx-auto my-auto d-flex align-items-center justify-content-center mb-3">
+                <div class="col-lg-5 col-md-5 col-sm-12 mx-auto my-auto d-flex align-items-center justify-content-center mb-3" data-aos="zoom-in">
                     <img class="picture-box" src="images_project2/sketch_mockup@2x.jpg" style="width:100%; height:auto;">
                 </div>
-                <div id="prototype-arrow" class="col-12 mx-auto d-flex align-items-center justify-content-center mb-3">
+                <div id="prototype-arrow" class="col-12 mx-auto d-flex align-items-center justify-content-center mb-3" data-aos="fade-right">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="50"><g fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path d="M10 7.875c-1.975 13.446 1.001 27.03-.5 40.5M3.236 11.107c3.721-2.325 4.349-6.603 7.402-9.481 1.046 3.027 3.442 9.07 6.125 11.113"/></g></svg>
                 </div>
-                <div class="col-lg-4 col-md-5 col-sm-12 col-12">
+                <div class="col-lg-4 col-md-5 col-sm-12 col-12" data-aos="zoom-in">
                     <img class="picture-box" src="images_project2/progression_mockup@2x.jpg" style="width:100%; height:auto;">
                 </div>
             </div>
@@ -210,13 +213,13 @@
     
         <div class="container col-9">
             <div class="row pt-5 mt-5">
-                <div class="col-4">
+                <div class="col-4" data-aos="zoom-in">
                     <img class="picture-box" src="images_project2/midfi_quiz@2x.jpg" style="width:100%">
                 </div>                
-                <div class="col-4">
+                <div class="col-4" data-aos="zoom-in">
                     <img class="picture-box" src="images_project2/midfi_featured@2x.jpg" style="width:100%">
                 </div>
-                <div class="col-4">
+                <div class="col-4" data-aos="zoom-in">
                     <img class="picture-box" src="images_project2/midfi_chat@2x.jpg" style="width:100%">
                 </div>
             </div>
@@ -226,10 +229,10 @@
 
     <div class="rwd-shift container col-9 pt-5 mt-5">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-right">
                 <h2>user-testing</h2>
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-12 d-flex justify-content-center mt-5">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-12 d-flex justify-content-center mt-5" data-aos="fade-right">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height=auto fill="#FF9364" class="bi bi-person-circle reverse-icon-child" viewBox="0 0 16 16">
@@ -242,7 +245,7 @@
                     </div>
                 </div>
             </div>
-            <div id="user-testing-box" class="col-lg-10 col-md-9 col-sm-8 col-10 mx-auto d-flex justify-content-center mt-5">
+            <div id="user-testing-box" class="col-lg-10 col-md-9 col-sm-8 col-10 mx-auto d-flex justify-content-center mt-5" data-aos="fade-left">
                 <div class="text-box">
                     <ul><li>Users have individual preferences (list vs map) — accommodate both while maintaining simplicity</li></ul>
                     <ul><li>“Featured” tab was confusing</li></ul>
@@ -256,10 +259,10 @@
 
     <div class="rwd-shift container col-9 pt-5 mt-5">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-right">
                 <h2>iterations & high-fidelity</h2>
             </div>
-            <div class="col-lg-4 col-md-5 mt-5">
+            <div class="col-lg-4 col-md-5 mt-5" data-aos="fade-right">
                 <div class="text-box">
                     <ul><li>Added “skip” option to initial quiz</li></ul>
                     <ul><li>Made the quiz available at anytime</li></ul>
@@ -268,21 +271,21 @@
                     <ul><li>Made clarifications to opening splash screen copy</li></ul>
                 </div>
             </div>
-            <div class="col-lg-8 col-md-7 mt-5">
+            <div class="col-lg-8 col-md-7 mt-5" data-aos="zoom-in">
                 <img src="images_project2/flow_chart.jpg" style="width:100%">
             </div>
         </div>  
         <div class="row pt-5 mt-5">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-6 pb-3">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 pb-3" data-aos="zoom-in">
                 <img class="picture-box" src="images_project2/hifi_splash@2x.jpg" style="width:100%">
             </div>                
-            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6" data-aos="zoom-in">
                 <img class="picture-box" src="images_project2/hifi_list@2x.jpg" style="width:100%">
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6" data-aos="zoom-in">
                 <img class="picture-box" src="images_project2/hifi_local@2x.jpg" style="width:100%">
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6" data-aos="zoom-in">
                 <img class="picture-box" src="images_project2/hifi_featured@2x.jpg" style="width:100%">
             </div>
         </div>
@@ -290,13 +293,13 @@
 
     <div class="rwd-shift container col-9 pt-5 mt-5">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-right">
                 <h2>interactive prototype</h2>
             </div>
-            <div class="col-12 mx-auto my-auto d-flex align-items-center justify-content-center mt-3 pt-5">
+            <div class="col-12 mx-auto my-auto d-flex align-items-center justify-content-center mt-3 pt-5" data-aos="zoom-in">
                 <iframe id="prototype" width="375" height="667" src="https://xd.adobe.com/embed/f7385a99-b6d3-4240-9745-8dcb1cbb9cb5-a26b/?fullscreen" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="col-12 center-text pt-3">
+            <div class="col-12 center-text pt-3" data-aos="zoom-in">
                 <p>(Go ahead, click around)</p>
             </div>
         </div>  
@@ -306,10 +309,10 @@
 
     <div class="rwd-shift container col-9 pt-5 mt-5">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-right">
                 <h2>conclusion</h2>
             </div>
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-right">
                 <p><br>This project is especially dear to me, because it was the first project that I took on as a UX/UI designer. Creating the idea for “local” was the first time I experienced conducting a user interview, gathering data from user-tests and surveys, and product design and prototyping.<br><br>
 
                     The absolute best part about the process with “local” for me was discovering an actual need that users have and meeting that need with a research-based, and tested solution. I believe in the potential “local” has.<br><br>
@@ -317,10 +320,10 @@
                     The next steps for me are to complete the front-end development of the app, and connect with a back-end development team to make the dream of “local” come alive.<br><br>
                 </p>
             </div>
-            <div class="col-12 mx-auto d-flex align-items-center justify-content-center">
+            <div class="col-12 mx-auto d-flex align-items-center justify-content-center" data-aos="fade-right">
                 <p>Thanks for reading, <br><span class="mx-auto d-flex align-items-center justify-content-center">Mick</span></p>
             </div>
-            <div class="col-12 mx-auto d-flex align-items-center justify-content-center pt-2 mt-5">
+            <div class="col-12 mx-auto d-flex align-items-center justify-content-center pt-2 mt-5" data-aos="fade-right">
                 <div>
                     <span class="link gray"><a href="index.html">Back to home</a></span>
                 </div>
@@ -333,6 +336,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="isInViewport.min.js"></script>
 <script src="index.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
 
 

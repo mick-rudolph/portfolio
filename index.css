@@ -18,7 +18,6 @@
 .slide {
     width: 100vw;
     height: 100vh;
-
     scroll-snap-align: start;
     scroll-snap-stop: normal;
 }
@@ -31,8 +30,6 @@ html {
 body {
     font-family: 'Didact Gothic', sans-serif;
     color: #2E2E2E;
-    /* width: 100vw;
-    height: 100vh; */
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
@@ -53,13 +50,6 @@ h2 {
     font-size: 4.5vmin;
     font-family: 'Cantarell', sans-serif;
 }
-
-.viewer {
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-  }
 
 /* Home */
 #nav {
@@ -209,11 +199,23 @@ a:hover {
     width: 4px;
     position: absolute;
     margin-left: 7%;
+    opacity: 0;
+}
+
+.naval-selected {
+    --background-color: #2E2E2E;
+    background-color: var(--background-color);
+    transition: background-color 500ms ease-in-out;
+}
+
+.dissapear {
+    opacity:0;
+    transition: opacity 400ms ease-in-out;
 }
 
 #naval1 {
     margin-top: 12vh;
-    background-color: #2E2E2E;
+    /* background-color: #2E2E2E; */
 }
 
 #naval2 {
@@ -294,8 +296,6 @@ a:hover {
     .project-description-box { height: 25vh; padding-top: 25px;}
 }
 
-
-
 #project1-description-box {
     background-color: #9AA28D;
 }
@@ -315,7 +315,7 @@ a:hover {
 .view-study-style {
     text-decoration: none;
     color: #2E2E2E;
-    position: absolute;
+    /* position: absolute; */
     bottom: 50%;
 }
 
@@ -335,11 +335,6 @@ a:hover {
 #contact-position {
     top: 300px;
     position: relative;
-}
-
-#about-position {
-    position: relative;
-    top: 20vh;
 }
 
 .about-rectangle {
@@ -392,3 +387,6 @@ a:hover {
     margin: 0 auto;
     z-index: 400;
 }
+
+
+
