@@ -17,41 +17,45 @@
 </head>
 <body>
 
-    <div>
+    <nav>
         <a href="index.html"></a>
             <div class="logo">
                 <a href="index.html">
                     <img src="assets/logo@3x.png" style="height: 50px; width: 50px;"> 
                 </a>
             </div>    
-        </a>
-        
-        <!-- Nav -->
-    
-        <div id="about-nav" class="container-fluid col-12">
+        </a>    
+        <div id="nav" class="container-fluid col-12">
             <div class="row navbar justify-content-center">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-12">
-                    <span class="link gray"><a>About</a></span>
+                    <span class="link gray"><a class="mobile-color about" href="about.html">About</a></span>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-12">
-                    <span id="projects-menu" class="link gray"><a href="index.html#project1">Projects</a></span>
+                    <span id="projects-menu" class="link gray"><a class="mobile-color projects" href="index.html#project1">Projects</a></span>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-12">
-                <span class="link gray"><a href="index.html#contact-page">Contact</a></span>
+                <span class="link gray"><a class="mobile-color contact" href="index.html#contact-page">Contact</a></span>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="burger pt-5">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
-    <br>
+    <br><br><br><br><br>
 
-    <div class="container col-8">
+
+    <div class="container-fluid col-lg-8 col-md-12">
         <div class="row">
-            
-                <div class="col-12">
-                    
+                <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-0 offset-md-2 offset-sm-1 offset-1 col-10 mt-3">
+                    <div class="about-rectangle mb-4">
+                        <img id="profile-img" src="images/profile_pic.JPG" alt="profile picture">
+                    </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-5 offset-lg-1 col-md-8 col-sm-10 col-10 offset-md-2 offset-sm-1 offset-1">
                     <h2>It's great to meet you</h2>
                     <p class="mt-4">I’m a marketer, UX/UI designer, and musician. <br><br>
 
@@ -64,18 +68,13 @@
                         I was born and raised in Salt Lake City, UT, and I absolutely love it. I love the mountains, skiing,  and running. <br><br> Fun fact: I once tried out for American Idol and played for Katie Perry, Luke Bryan, and Lionel Richie.<br><br>
                         
                     </p>
-                    <div class="row">
-                        <div class="col-12 mx-auto d-flex align-items-center justify-content-center">
-                            <a id="resume-button" href="assets/Mick Rudolph Resume 2020.zip" download><p>Download my resume</p></a>
-                        </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-12 mx-auto d-flex align-items-center justify-content-center">
+                        <a id="resume-button" href="assets/Mick Rudolph Resume 2020.zip" download><p>Download my resume</p></a>
                     </div>
                 </div>
-                
-                <div class="col-5 offset-1 mt-3">
-                    <div class="about-rectangle">
-                        <img id="profile-img" src="images/profilepic@2x.jpg" alt="profile picture" style="width:100%;">
-                    </div>
-                </div>
+               
             </div>
             
         </div>
@@ -88,5 +87,5 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="isInViewport.min.js"></script>
-<script src="index.js"></script>
+<script src="js/one.js"></script>
 </html>

@@ -20,27 +20,35 @@
     <title>Every meal matters</title>
 </head>
 <body>
-    <div class="logo">
-        <a href="index.html">
-                <img src="assets/logo@3x.png" style="height: 50px; width: 50px;"> 
-        </a>
-    </div>
-    <!-- <a href="index.html"><div class="logo-link"></div></a> -->
-    <div id="nav" class="container-fluid col-12">
-        <div class="row navbar justify-content-lg-center">
-            <div class="col-lg-2">
-                <span class="link gray"><a href="about.html">About</a></span>
-            </div>
-            <div class="col-lg-2">
-                <span id="projects-menu" class="link gray"><a href="index.html#project1">Projects</a></span>
-            </div>
-            <div class="col-lg-2">
-            <span class="link gray"><a href="index.html#contact-page">Contact</a></span>
+    <nav>
+        <a href="index.html"></a>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo@3x.png" style="height: 50px; width: 50px;"> 
+                </a>
+            </div>    
+        </a>    
+        <div id="nav" class="container-fluid col-12">
+            <div class="row navbar justify-content-center">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <span class="link gray"><a class="mobile-color about" href="about.html">About</a></span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <span id="projects-menu" class="link gray"><a class="mobile-color projects" href="index.html#project1">Projects</a></span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+                <span class="link gray"><a class="mobile-color contact" href="index.html#contact-page">Contact</a></span>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="burger pt-5">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
-    <div id="hero" class="container col-lg-8 col-md-10 col-sm-10 col-10">
+    <div id="hero" class="container col-lg-8 col-md-10 col-sm-10 col-10 mobile-padding">
         <div class="row">
             <div id="title-box" class="col-lg-8 col-md-12 pink-background blue">
                 <h1>Every Meal Matters</h1>
@@ -427,10 +435,10 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="isInViewport.min.js"></script>
+<!-- <script src="isInViewport.min.js"></script> -->
+<script src="js/one.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
-<script src="index.js"></script>
 </html>

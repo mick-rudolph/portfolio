@@ -1,12 +1,12 @@
-$(document).ready(function(){
-    $( window ).resize(function() {
-        if ($(window).width() < 768 ) {
-           $('.reverse').addClass('flex-column-reverse')
-        } else {
-            $('.reverse').removeClass('flex-column-reverse');
-        }
-    });
-});
+// $(document).ready(function(){
+//     $( window ).resize(function() {
+//         if ($(window).width() < 768 ) {
+//            $('.reverse').addClass('flex-column-reverse')
+//         } else {
+//             $('.reverse').removeClass('flex-column-reverse');
+//         }
+//     });
+// });
 
 const tilesL = document.querySelectorAll('.tileLeft');
 observer = new IntersectionObserver((entries) => {
@@ -178,6 +178,65 @@ sectionFourOptions);
 
 sectionFourObserver.observe(prono);
 
+///////
+
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.navbar');
+    const navLinks = document.querySelectorAll('.navbar div');
+    const projects = document.querySelector('.projects');
+    const contact = document.querySelector('.contact');
+
+    burger.addEventListener('click',() => {
+        ///Toggle Nav
+        nav.classList.toggle('nav-active');
+
+        ///Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ''
+            }
+            else {
+            link.style.animation = `navLinkFade .5s ease forwards  ${index / 7 + .5}s`;
+            }
+        });
+        ///Burger Animation
+        burger.classList.toggle('toggle');
+
+    });
+
+    projects.addEventListener('click',() => {
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ''
+            }
+            else {
+            link.style.animation = `navLinkFade .5s ease forwards  ${index / 7 + .5}s`;
+            }
+        });
+    })
+
+    contact.addEventListener('click',() => {
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ''
+            }
+            else {
+            link.style.animation = `navLinkFade .5s ease forwards  ${index / 7 + .5}s`;
+            }
+        });
+    })
+
+
+};
+
+navSlide();
 
 
 

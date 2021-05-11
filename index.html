@@ -22,32 +22,34 @@
 <body>
     <article class="viewer">
         <section id="home" class="slide">
-            <div>
+           
+            <nav>
                 <a href="index.html"></a>
                     <div class="logo">
                         <a href="index.html">
                             <img src="assets/logo@3x.png" style="height: 50px; width: 50px;"> 
                         </a>
                     </div>    
-                </a>
-                
-                <!-- Nav -->
-            
+                </a>    
                 <div id="nav" class="container-fluid col-12">
                     <div class="row navbar justify-content-center">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-12">
-                            <span class="link gray"><a href="about.html">About</a></span>
+                            <span class="link gray"><a class="mobile-color about" href="about.html">About</a></span>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-12">
-                            <span id="projects-menu" class="link gray"><a href="#project1">Projects</a></span>
+                            <span id="projects-menu" class="link gray"><a class="mobile-color projects" href="#project1">Projects</a></span>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-12">
-                        <span class="link gray"><a href="#contact-page">Contact</a></span>
+                        <span class="link gray"><a class="mobile-color contact" href="#contact-page">Contact</a></span>
                         </div>
                     </div>
                 </div>
-
-            </div>
+                <div class="burger pt-5">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
 
             <div class="container">
                 <div class="row">
@@ -116,7 +118,7 @@
 
         <span class="projects">
             <section id="project1" class="slide project1-section" style="background-color: rgb(239, 241, 241);">
-                <div class="container-fluid col-10 project-tiles">
+                <div class="container-fluid col-lg-10 col-md-10 col-sm-10 col-12 project-tiles mobile-shift">
                     <div class="row gx-1 reverse">
                         <div class="col-lg-5 offset-lg-1 col-md-5">
                             <div id="project1-description-box" class="project-description-box tileLeft" data-delay="0s">
@@ -129,7 +131,7 @@
                                     <div class="row">
                                         <div>A guilt-free environmental website that inspires behavioral change.</div>
                                     </div>
-                                    <div class="row pt-4">
+                                    <div class="row">
                                         <a class="view-study-style" href="project1.html">
                                             <div class="mt-3">View the case study</div>
                                             <svg class="view-study" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -166,7 +168,7 @@
             </section>
     
             <section id="project2" class="slide project2-section" style="background-color: #FFFEFC;">
-                <div class="container-fluid col-10 project-tiles">
+                <div class="container-fluid col-lg-10 col-md-10 col-sm-10 col-12 project-tiles">
                     <div class="row gx-1">
                         <!-- THing 1 -->
                         <div class="col-lg-6 col-md-7 offset-lg-1 img-hover-zoom tileLeft" data-delay="0s">
@@ -218,7 +220,7 @@
               </section>
     
             <section id="project3" class="slide project3-section" style="background-color:#EEF8EC;">
-                <div class="container-fluid col-10 project-tiles">
+                <div class="container-fluid col-lg-10 col-md-10 col-sm-10 col-12 project-tiles">
                     <div class="row gx-1 reverse">
                         <div class="col-lg-5 offset-lg-1 col-md-5">
                             <div id="project3-description-box" class="project-description-box tileLeft" data-delay="0s">
@@ -300,5 +302,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- <script src="isInViewport.min.js"></script> -->
 <!--Don't think I need this ^^^-->
-<script src="index.js"></script>
+<script src="js/index.js"></script>
 </html>
