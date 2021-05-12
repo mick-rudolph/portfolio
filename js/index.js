@@ -1,13 +1,3 @@
-// $(document).ready(function(){
-//     $( window ).resize(function() {
-//         if ($(window).width() < 768 ) {
-//            $('.reverse').addClass('flex-column-reverse')
-//         } else {
-//             $('.reverse').removeClass('flex-column-reverse');
-//         }
-//     });
-// });
-
 const tilesL = document.querySelectorAll('.tileLeft');
 observer = new IntersectionObserver((entries) => {
 

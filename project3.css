@@ -81,7 +81,7 @@ h3 {
         /* top: 12vh; */
         height: 100vh;
         background-color: #fcfcfc;
-        opacity: .98;
+        opacity: .9;
         width: 103vw;
         transform: translateX(100%);
         transition: transform .5s ease-in-out;
@@ -171,7 +171,7 @@ a:hover {
 .logo {
     position:absolute;
     margin-left: 6%;
-    padding-top: 25px;
+    padding-top: 27px;
     z-index: 90;
 }
 
