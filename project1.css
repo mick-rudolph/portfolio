@@ -4,23 +4,6 @@
     box-sizing: border-box;
 }
 
-.green {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 5px 5px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    position: absolute;
-    left: 30px
-}
-
-.bro {
-    position: relative;
-    transform: translate(-10px,-10px);
-}
-
 body {
     color: #2E2E2E;
     font-family: 'Roboto', sans-serif;

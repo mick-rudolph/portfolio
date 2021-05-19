@@ -21,12 +21,30 @@
     scroll-behavior: smooth; 
     --scroll-behavior: smooth;
   }
+
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .viewer {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+}}
   
 .slide {
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: normal;
+}
+
+/* Chrome 29+ */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    .slide {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 }
 
 html {
@@ -44,8 +62,7 @@ body {
 section {
     height: 100vh;
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
-    overflow-x: hidden;
+    scroll-snap-stop: normal;    
 }
 
 h1 {
