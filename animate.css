@@ -70,7 +70,7 @@
   bottom: 0;
 }
 .animated-title div.text-bottom div {
-  animation: showBottomText 0.5s;
+  animation: showBottomText 1.3s;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
   top: 0;

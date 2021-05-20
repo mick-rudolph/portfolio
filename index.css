@@ -240,7 +240,7 @@ a:hover {
     align-items: center;
     opacity: 0;
     animation: heroButton-reveal 3s;
-	animation-delay: 2.3s;
+	animation-delay: 2.7s;
 	animation-fill-mode: forwards;
 }
 
@@ -266,11 +266,11 @@ a:hover {
 	animation-fill-mode: forwards;
 }
 
-.project-padding {
+.viewproject-padding {
     margin-top: 24vh;
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 375px) {
     .project-padding {
         margin-top: 18vh;
     }
@@ -291,6 +291,12 @@ a:hover {
     .project-tiles {
         position: relative;
         transform:translateY(-20px)
+    }
+}
+
+@media all and (max-width: 375px) {
+    .project-tiles {
+        transform:translateY(-40px)
     }
 }
 
@@ -463,8 +469,14 @@ a:hover {
 }
 
 #contact-position {
-    top: 280px;
+    top: 150px;
     position: relative;
+}
+
+@media all and (max-width: 375px) {
+    #contact-position {
+        transform:translateY(-60px)
+    }
 }
 
 .about-rectangle {
@@ -517,13 +529,32 @@ a:hover {
 }
 
 .back-position { 
-    margin-top: 40vh;
+    margin-top: 35vh;
 }
 
 @media all and (max-width: 768px) {
     .back-position { 
         margin-top: 30vh;
     }
+}
+
+@media all and (max-width: 375px) {
+    .back-position { 
+        margin-top: 25vh;
+    }
+}
+
+.wrapper {
+    min-height: calc(100vh - 200px);
+}
+
+footer {
+    height: 200px;
+}
+
+.copyright {
+    color:#9B9B9B;
+    font-size: 13px;
 }
 
 .page-arrow {
