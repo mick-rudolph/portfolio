@@ -175,40 +175,6 @@ a:hover {
     }
 }
 
-/* .about-rectangle {
-    position: relative;
-    width: 100%;
-    background-image: linear-gradient(to top right,#d8f3fc, #3b7a91);
-    z-index: -1;
-} */
-
-/* #profile-img {
-    transform: translate(-10px,-12px);
-    width: 100%;
-    height: 100%;
-} */
-
-
-/* @media all and (max-width: 576px) {
-    .about-rectangle {
-        border-radius: 50%;
-        height: 300px;
-        width: 300px;
-    }
-    #profile-img {
-        width:500px;
-        height:500px;
-        background-size:cover;
-        background-position:center;
-        border-radius:50%;
-    }
-}
-
-@media all and (max-width: 992px) {
-    #profile-img { height: 375px; width: 100%; object-fit: cover;
-        object-position: 0px -100px;}
-} */
-
 .bold {
     font-weight: bold;
 }
@@ -238,6 +204,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform:translateY(75px);
 }
 
 #skills {
@@ -256,13 +223,12 @@ a:hover {
 }
 
 #skills span {
-    font-size: 12px;
+    font-size: 13px;
     position: absolute;
     transform-origin: top left;
-    /* transform-origin: 00% 00%;  */
     /* text-transform: uppercase;
-    display: inline-block;
-    transform-origin: 0 100px; */
+    display: inline-block; */
+    /* transform-origin: 20% 20%;  */
 }
 @keyframes animate 
 {
