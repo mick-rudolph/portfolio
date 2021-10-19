@@ -1,3 +1,5 @@
+/// Tile animation
+
 const tilesL = document.querySelectorAll('.tileLeft');
 observer = new IntersectionObserver((entries) => {
 
@@ -46,7 +48,13 @@ tilesB.forEach(tile => {
     observer.observe(tile)
 })
 
+/// Side navigation bar animation & function
+
 const nav = document.querySelectorAll('.naval');
+const navOptions = {
+    rootMargin: "500px 0px -100px 0px"
+};
+
 observer = new IntersectionObserver((entries) => {
 
     entries.forEach(entry => {
@@ -57,10 +65,39 @@ observer = new IntersectionObserver((entries) => {
             entry.target.style.animation = 'none'
         }
     })
-})
+},
+navOptions);
 nav.forEach(tile => {
     observer.observe(tile)
 })
+
+/// Signifies viewed section status
+
+const status0 = document.querySelector(".naval0-status");
+const pro0 = document.querySelector(".project0-section");
+
+const sectionZeroOptions = {
+    rootMargin: "-100px 0px -100px 0px"
+};
+
+const sectionZeroObserver = new IntersectionObserver(function(
+    entries, 
+    sectionZeroObserver
+){
+    entries.forEach(entry =>{
+        if(entry.isIntersecting) {
+            status0.classList.add('naval-selected');
+        }
+        else {
+            status0.classList.remove('naval-selected');
+        }
+    })
+}, 
+sectionZeroOptions);
+
+sectionZeroObserver.observe(pro0);
+
+/////////
 
 const status1 = document.querySelector(".naval1-status");
 const pro1 = document.querySelector(".project1-section");
@@ -162,13 +199,11 @@ const sectionFourObserver = new IntersectionObserver(function(
 },
 sectionFourOptions);
 
-// nav.forEach(tile => {
-//     prono.observe(tile)
-// })
-
 sectionFourObserver.observe(prono);
 
 ///////
+
+/// Burger Animation
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -230,59 +265,3 @@ navSlide();
 
 
 
-// This is all the old in viewport stuff
-
-// $.fn.isInViewport = function () {
-//     let elementTop = $(this).offset().top;
-//     let elementBottom = elementTop + $(this).outerHeight();
-
-//     let viewportTop = $(window).scrollTop();
-//     let viewportBottom = viewportTop + $(window).height();
-
-//     return elementBottom > viewportTop && elementTop < viewportBottom;
-// };
-
-// $(window).scroll(function () {
-//     if ($('#yo1').isInViewport()) {
-//         $("#naval1").css("background-color","#2E2E2E").css("opacity","1");  
-//         $("#naval2").css("background-color","#D5D5D5").css("opacity","1");  
-//         $("#naval3").css("background-color","#D5D5D5").css("opacity","1");   
-//         console.log('success.')
-//     } 
-//     if ($('#yo2').isInViewport()) {
-//         $("#naval1").css("background-color","#D5D5D5").css("opacity","1");  
-//         $("#naval2").css("background-color","#2E2E2E").css("opacity","1");  
-//         $("#naval3").css("background-color","#D5D5D5").css("opacity","1");  
-//     } 
-//     if ($('#yo3').isInViewport()) {
-//         $("#naval1").css("background-color","#D5D5D5").css("opacity","1");  
-//         $("#naval2").css("background-color","#D5D5D5").css("opacity","1");  
-//         $("#naval3").css("background-color","#2E2E2E").css("opacity","1");  
-//     } 
-//     if ($('#contact-page').isInViewport()) {
-//         $("#naval1").css("opacity","0");
-//         $("#naval2").css("opacity","0");
-//         $("#naval3").css("opacity","0");
-//     } 
-// });
-
-
-
-
-
-
-// var observer = new IntersectionObserver(function(entries) { console.log(entries);
-// 	if(entries[0]['isIntersecting'] === true) {
-// 		if(entries[0]['intersectionRatio'] === 1)
-// 			document.querySelector("#message").textContent = 'Target is fully visible in screen';
-// 		else if(entries[0]['intersectionRatio'] > 0.5)
-// 			document.querySelector("#message").textContent = 'More than 50% of target is visible in screen';
-// 		else
-// 			document.querySelector("#message").textContent = 'Less than 50% of target is visible in screen';
-// 	}
-// 	else {
-// 		document.querySelector("#message").textContent = 'Target is not visible in screen';
-// 	}
-// }, { threshold: [0, 0.5, 1] });
-
-// observer.observe(document.querySelector("#target-container"));

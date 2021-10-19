@@ -34,8 +34,9 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
     <link href="https://mickrudolphdesign.com/project2.css" rel="stylesheet" type="text/css">
+    <!-- <link href="project2.css" rel="stylesheet" type="text/css"> -->
         <!-- This is for the pop-in animations -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
         <!-- . -->
     <title>local</title>
 </head>
@@ -44,7 +45,14 @@
         <a href="https://mickrudolphdesign.com/index.html"></a>
             <div class="logo">
                 <a href="https://mickrudolphdesign.com/index.html">
-                    <img src="assets/personal_logo@3x.png" style="height: 45px; width: 45px;"> 
+                    <!-- <img src="assets/" style="height: 45px; width: 45px;">  -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44.5823" viewBox="0 0 1299.057 1287">
+                        <g id="Group_836" data-name="Group 836" transform="translate(-93.413 -238.446)">
+                          <text id="M" transform="translate(93.413 1260.446)" fill="#2e2e2e" font-size="979" font-family="Cantarell-Regular, Cantarell"><tspan x="0" y="0">M</tspan></text>
+                          <path id="Subtraction_2" data-name="Subtraction 2" d="M387.59,664.541H298.807L118.9,387.909H0V317.816H104.883c15.811,0,29.96-.55,42.056-1.635s26.48-4.073,42.756-8.878a140.734,140.734,0,0,0,22.43-8.645,101.15,101.15,0,0,0,18.224-11.449A83.318,83.318,0,0,0,245.3,271.438a126.88,126.88,0,0,0,12.616-21.612,116.741,116.741,0,0,0,8.587-26.81,171.844,171.844,0,0,0,1.343-54.03,125.644,125.644,0,0,0-4.556-20.327,128.139,128.139,0,0,0-6.893-17.464,86.4,86.4,0,0,0-8.528-14.077,91.614,91.614,0,0,0-10.4-11.565,99.046,99.046,0,0,0-12.5-9.929,125.97,125.97,0,0,0-26.167-13.785,167.411,167.411,0,0,0-28.038-7.476,242.973,242.973,0,0,0-25.466-3.5c-6.658-.465-13.811-.7-21.262-.7H0V.529H154.416c11.167,0,21.386.315,30.373.935A317.413,317.413,0,0,1,219.6,6.37a190.119,190.119,0,0,1,37.616,10.748,129.149,129.149,0,0,1,16.764,8.528,187.562,187.562,0,0,1,17.582,12.033A129.554,129.554,0,0,1,308.036,52.69,125.179,125.179,0,0,1,321.47,70.155a136.036,136.036,0,0,1,10.865,21.261,215.065,215.065,0,0,1,8.762,26.4,221.521,221.521,0,0,1,5.783,30.724,291.931,291.931,0,0,1,1.928,34.228,260.01,260.01,0,0,1-1.986,32.36,234.021,234.021,0,0,1-5.958,30.724A206.711,206.711,0,0,1,330.7,275.059a216.558,216.558,0,0,1-14.6,27.8,144.025,144.025,0,0,1-20.035,25.292,171.332,171.332,0,0,1-26.46,21.67,191.52,191.52,0,0,1-32.184,17.231,234.9,234.9,0,0,1-37.208,11.974L387.591,664.541h0Z" transform="translate(1004.014 572.905)" fill="#2e2e2e" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+                        </g>
+                      </svg>
+                      
                 </a>
             </div>    
         </a>    
@@ -54,12 +62,14 @@
                     <span class="link gray"><a class="mobile-color about" href="https://mickrudolphdesign.com/about.html">About</a></span>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-12">
-                    <span id="projects-menu" class="link gray"><a class="mobile-color projects" href="https://mickrudolphdesign.com/index.html#project1">Projects</a></span>
+                    <span id="projects-menu" class="link gray"><a class="mobile-color projects" href="#project0">Projects</a></span>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-12">
-                <span class="link gray"><a class="mobile-color contact" href="https://mickrudolphdesign.com/index.html#contact-page">Contact</a></span>
+                    <span class="link gray"><a class="mobile-color contact" href="#contact-page">Contact</a></span>
                 </div>
+                <div class="nav-box"></div>
             </div>
+            <div class="nav-box-mobile"></div>
         </div>
         <div class="burger pt-5">
             <div class="line1"></div>
@@ -68,7 +78,7 @@
         </div>
     </nav>
 
-    <div class="container col-lg-7 col-md-8 col-sm-10 col-12 mobile-padding">
+    <div id="hero" class="container col-lg-7 col-md-8 col-sm-10 col-12 mobile-padding">
         <div class="row">
             <div class="col-12 mx-auto d-flex align-items-center justify-content-center">
                 <h1 id="hero-text" class="bold">local</h1>
@@ -364,9 +374,9 @@
 <script src="isInViewport.min.js"></script>
 <script src="https://mickrudolphdesign.com/js/one.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
+<!-- <script>
   AOS.init();
-</script>
+</script> -->
 </html>
 
 

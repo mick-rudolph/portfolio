@@ -28,7 +28,7 @@
   position: relative;
   /* top: 50%; */
   /* transform: translate(-50%, -50%); */
-  width: 75vmin;
+  width: 70vmin;
   margin: 0 auto;
   margin-top: 25vh;
 }
@@ -40,12 +40,11 @@
 }
 
 .heading {
-	font-size: 8vmin;
+	font-size: 7.4vmin;
 	padding: 2vmin 0;
 }
 
 .sub-heading {
-	/* font-size: 2vmin; */
 	padding: 2vmin 0;
 }
 
@@ -66,6 +65,7 @@
 /* .animated-title div.text-top div span:first-child {
   color: #767676;
 } */
+
 .animated-title div.text-bottom {
   bottom: 0;
 }
