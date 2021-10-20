@@ -1,5 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/capture-it');
-
 *{
     margin: 0px;
     padding: 0px;
@@ -13,6 +11,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Capture_it';
+    font-style: normal;
+    font-weight: normal;
+    src: url("https://mickrudolphdesign.com/fonts/capture-it/Capture_it.woff") format("woff"),
+    url("https://mickrudolphdesign.com/fonts/capture-it/Capture_it.ttf") format("truetype");
+}
+
   
 /* .viewer {
     width: 100vw;
