@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/capture-it');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -63,6 +65,7 @@ section {
     /* scroll-snap-align: start;
     scroll-snap-stop: normal; */
 }
+
 
 h1 {
     font-size: 48px;
