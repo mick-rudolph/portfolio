@@ -22,13 +22,13 @@
   } */
 
 /* Safari 11+ */
-@media not all and (min-resolution:.001dpcm)
+/* @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
     .slide {
         max-width: 100%;
         overflow-x: hidden;
       }
-}}
+}} */
   
 /* .slide {
     width: 100vw;
@@ -38,13 +38,13 @@
 } */
 
 /* Chrome 29+ */
-@media screen and (-webkit-min-device-pixel-ratio:0)
+/* @media screen and (-webkit-min-device-pixel-ratio:0)
   and (min-resolution:.001dpcm) {
     .slide {
         max-width: 100%;
         overflow-x: hidden;
     }
-}
+} */
 
 html {
     scroll-behavior: smooth; 
@@ -518,7 +518,16 @@ a:hover {
     position: absolute;
     z-index: -4;
     transform: translate(-12px, -46px);
+    width: auto;
 }
+
+@media all and (max-width: 1100px) {
+    .streak {
+        width: 192px;
+        transform: translate(-12px, -40px);
+    }
+}
+
 
 .gnomebebird {
     position: absolute;

@@ -52,7 +52,7 @@ tilesB.forEach(tile => {
 
 const nav = document.querySelectorAll('.naval');
 const navOptions = {
-    rootMargin: "500px 0px -100px 0px"
+    rootMargin: "-100px 0px -100px 0px"
 };
 
 observer = new IntersectionObserver((entries) => {
