@@ -15,8 +15,8 @@
 body {
     font-family: 'Didact Gothic', sans-serif;
     color: #2E2E2E;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    /* overflow-y: scroll;
+    scroll-snap-type: y mandatory; */
 }
 
 h1 {
@@ -307,11 +307,13 @@ a:hover {
     position: relative;
     width: 300px;
     height:300px;
-    background-image: url(images/profile_pic.JPG);
+    background-image: url(images/profile_pic_zoom.JPG);
     background-size:cover;
     background-position:center;
     border-radius:50%;
     margin: 0 auto;
+    background-position: -42px 0px;
+    background-repeat: no-repeat;
 }
 
 @media all and (min-width: 576px) {
@@ -328,6 +330,14 @@ a:hover {
 .border-line {
     border-bottom: 1px solid rgb(29, 28, 28);
     width: 30vw;
+}
+
+.passions a {
+    color: #3b7a91;
+}
+
+#favorites a {
+    color: #3b7a91;
 }
 
 @media all and (max-width: 375px) {
@@ -348,4 +358,22 @@ a:hover {
     .desktop-padding {
         padding-bottom: 0vh;
     }
+}
+
+.pic-descrip-header {
+    position: relative;
+    writing-mode: vertical-lr;
+    transform: translate(-42px,267px);
+}
+
+.gallery img {
+    width: 100%;
+    padding-bottom: 26px;
+}
+
+@media all and (max-width: 768px) {
+    .dance {display:none;}
+}
+@media all and (max-width: 576px) {
+    .west {display:none;}
 }
